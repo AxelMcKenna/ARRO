@@ -38,9 +38,12 @@ export default function Footer() {
             <p className="text-xs uppercase tracking-[0.15em] text-background/40 mb-1">
               Legal
             </p>
-            <span className="text-background/30 font-light cursor-default">
+            <a
+              href="#privacy"
+              className="text-background/60 font-light hover:text-background transition-colors"
+            >
               Privacy Policy
-            </span>
+            </a>
           </div>
         </div>
       </div>
