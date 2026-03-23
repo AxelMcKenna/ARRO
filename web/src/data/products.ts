@@ -3,8 +3,9 @@ export type Product = {
   tagline: string
   description: string
   url: string
-  color: 'liquorfy' | 'trolle'
+  color: 'liquorfy' | 'trolle' | 'talle'
   status: 'live' | 'coming-soon'
+  comingSoonNote?: string
 }
 
 export const products: Product[] = [
@@ -25,5 +26,16 @@ export const products: Product[] = [
     url: '#',
     color: 'trolle',
     status: 'coming-soon',
+    comingSoonNote: "We'll let you know when it's ready.",
+  },
+  {
+    name: 'Talle',
+    tagline: 'Compare retail prices across NZ',
+    description:
+      'Multi-vertical price intelligence covering technology, home & appliances, pharmaceuticals, supplements, beauty, and pet goods. One search, every retailer.',
+    url: '#',
+    color: 'talle',
+    status: 'coming-soon',
+    comingSoonNote: 'In the works — stay tuned.',
   },
 ]

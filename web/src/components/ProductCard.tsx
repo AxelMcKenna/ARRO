@@ -11,6 +11,11 @@ const COLOR_CLASSES = {
     badge: 'bg-trolle-light text-trolle',
     button: 'bg-trolle hover:bg-trolle/90',
   },
+  talle: {
+    border: 'border-l-talle',
+    badge: 'bg-talle-light text-talle',
+    button: 'bg-talle hover:bg-talle/90',
+  },
 } as const
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -60,7 +65,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </a>
       ) : (
         <p className="mt-auto text-sm text-foreground-muted/60 font-light italic">
-          We'll let you know when it's ready.
+          {product.comingSoonNote}
         </p>
       )}
     </div>
