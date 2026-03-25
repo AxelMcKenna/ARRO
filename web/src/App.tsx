@@ -20,7 +20,9 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    if (page === '#privacy') {
+      window.scrollTo(0, 0)
+    }
   }, [page])
 
   if (page === '#privacy') {
