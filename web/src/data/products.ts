@@ -4,7 +4,7 @@ export type Product = {
   description: string
   url: string
   color: 'liquorfy' | 'trolle' | 'talle'
-  status: 'live' | 'coming-soon'
+  status: 'live' | 'beta' | 'coming-soon'
   comingSoonNote?: string
 }
 
@@ -23,10 +23,9 @@ export const products: Product[] = [
     tagline: 'Track grocery prices and find savings',
     description:
       'Cross-supermarket grocery price tracking for New Zealand. See which store has the best price on everyday items.',
-    url: '#',
+    url: 'https://trolle-nz.vercel.app',
     color: 'trolle',
-    status: 'coming-soon',
-    comingSoonNote: "We'll let you know when it's ready.",
+    status: 'beta',
   },
   {
     name: 'Talle',

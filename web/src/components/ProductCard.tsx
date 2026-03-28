@@ -36,13 +36,20 @@ export default function ProductCard({ product }: { product: Product }) {
             Coming soon
           </span>
         )}
+        {product.status === 'beta' && (
+          <span
+            className={`text-[10px] uppercase tracking-[0.15em] font-medium px-2 py-0.5 rounded-full ${colors.badge}`}
+          >
+            Beta
+          </span>
+        )}
       </div>
 
       <p className="text-sm text-foreground-muted font-light leading-relaxed">
         {product.description}
       </p>
 
-      {product.status === 'live' ? (
+      {product.status === 'live' || product.status === 'beta' ? (
         <a
           href={product.url}
           target="_blank"
